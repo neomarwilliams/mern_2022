@@ -1,0 +1,40 @@
+Problem 1
+    Prediction:
+        console.log(randomCar) will log Tesla
+        console.log(otherRandomCar) will log Mercedes
+    Actual Results:
+        correct!
+
+Problem 2
+    Prediction:
+        console.log(name) will log undefined
+        console.log(otherName) will log Elon
+    Actual Results:
+        first prediction threw an error.
+        second predition correct!
+
+Problem 3
+    Prediction:
+        console.log(password) will log 12345
+        console.log(hashedPassword) will throw an error because the key password does not exist within the object person
+    Actual Results:
+        first prediction correct
+        second prediction logged undefined. Why did it log undefined instead of throwing an error?
+
+Problem 4
+    Prediction:
+        console.log(first==second) will log 5
+        console.log(first==third) will log 2
+    Actual Results:
+        I got mixed up thinking = instead of ==.
+        the first prediction logs false becasue second ==5 while first ==2
+        the second prediction logs true becase both first and third ==2
+
+Problem 5
+    Prediction:
+        console.log(key) will log value
+        console.log(secondKey) will log [1, 5, 1, 8, 3, 3]
+        console.log(secondKey[0]) will log 1
+        console.log(willThisWork) will log 5
+    Actual Results:
+        All predictions correct
