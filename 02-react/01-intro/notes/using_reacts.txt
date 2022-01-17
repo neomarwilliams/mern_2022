@@ -1,0 +1,22 @@
+1. react works by using objects--called components
+2. break down the DOM into a variety of components that have specific behaviors
+3. ex. of things-- if you have a form, make a component for the form. if you have a nav bar, make a component for the navbar
+
+4. to use react within HTML include react scripts in the html
+
+<script crossorigin="" src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script crossorigin="" src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script> 
+
+Making a basic component with React--
+    React.createElement
+        //three main parameters
+        1. tell React type of element |  <h1>
+        2. pass in props |  {}
+        3. include children |  ex. "string within the <h1>" OR nested elements
+                ** can also nest another React component
+
+        example:
+        const myReactComponent = React.createElement("h1", {}, "I am creating my first React component")
+
+        nested react component
+        const myNestedReactComponent = React.createElement("div", {}, React.createElement("p", {}, "This element is nested"))

@@ -1,0 +1,18 @@
+javascript library to build user interfaces
+
+open-source project maintained by Facebook
+one of the most popular front end frameworks (along with Angular and Vue)
+
+Why should we learn react
+    single page application
+        makes our page feel more responsive by eliminating page loads
+
+    we can choose the technologies to use (React is not picky)
+
+    react does not prevent us from using DOM manipulation already built into javascript
+
+    react is popular
+        second only to jQuery in usage
+        react is the most loved web frameworks
+
+        
