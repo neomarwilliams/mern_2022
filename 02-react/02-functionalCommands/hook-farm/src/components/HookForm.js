@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
+import HookFormValidations from './HookFormValidations';
 
 const HookForm = (props) => {
     //const { initalFirstName, initialLastName, initialEmail, initialPassword, initialConfirmPassword } = props;
-    const [ firstName, setFirstName ] = useState();
-    const [ lastName, setLastName ] = useState();
-    const [ email, setEmail ] = useState();
-    const [ password, setPassword ] = useState();
-    const [ confirmPassword, setConfirmPassword ] = useState();
+    const [ firstName, setFirstName ] = useState("");
+    const [ lastName, setLastName ] = useState("");
+    const [ email, setEmail ] = useState("");
+    const [ password, setPassword ] = useState("");
+    const [ confirmPassword, setConfirmPassword ] = useState("");
+    const [ hasBeenSubmitted, setHasBeenSubmitted ] = useState(true);
 
     const createUser = (e) => {
         e.preventDefault();
@@ -20,9 +22,32 @@ const HookForm = (props) => {
         console.log("Welcome", newUser);
     }
 
+    const formMessage = () => {
+        if ( hasBeenSubmitted ) {
+            console.log("Thank you for submitting the form")
+            return "Thank you for submitting the form!";
+        } else {
+            console.log("Welcome, please submit the form")
+            return "Welcome, please submit the form";
+        }
+    };
+
+    // const firstNameError = (e) => {
+    //     setFirstName(e.target.value);
+    //     if (e.target.value.len() < 1) {
+    //         setFirstNameError("First Name is required!");
+    //     } else if (e.target.value.length < 2) {
+    //         setFirstNameError("First Name must be 2 or more characters");
+    //     } else {
+    //         setFirstNameError("");
+    //     }
+    // };
+
     return (
         <div>
             <form onSubmit = { createUser }>
+                <h3> { formMessage() }</h3>
+                <HookFormValidations></HookFormValidations>
                 <div>
                     <label>First Name:</label>
                     <input type = "text" onChange={ (e) => setFirstName(e.target.value) }/>
