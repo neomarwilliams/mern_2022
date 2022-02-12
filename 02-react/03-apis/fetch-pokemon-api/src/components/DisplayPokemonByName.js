@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 const DisplayPokemonByName = (props) => {
 
     const [ pokedex, setPokedex ] = useState([]);
+    const [ pokemonNumber, setPokemonNumber ] = useState([]);
 
     useEffect(() => {
         fetch("https://pokeapi.co/api/v2/pokemon")
