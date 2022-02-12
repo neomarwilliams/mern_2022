@@ -1,0 +1,9 @@
+JSX provides syntactic sugar for the 
+    React.createElement(component, props, ...children) function 
+
+JSX stands for
+    JavaScript Syntax Extention
+
+JSX cannot be interpreted by browsers so we use a transpiler. --BABEL
+    add babel to html page with a script tag
+    
