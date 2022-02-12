@@ -28,30 +28,6 @@ const FetchPokemon = (props) => {
     )
 
 
-
-//             .then((res) => {
-//                 
-//             })
-//             .catch((err)=>console.log(err))
-//     }, [ ])
-
-//     const createPokedex = (e) => {
-//         setPokedex([...pokedex, pokemon])
-//     }
-
-//     return (
-//         <div>
-//             <h1>{ pokemon.name }</h1>
-//             {/* <button onClick={ displayPokeList }>Fetch</button> */}
-//         </div>
-//     );
-
-// }
-
-// // write a function to create an array with all the pokemon that you need. 
-// // then write another function that maps the pokemon array by name into a list. 
-// // This is the way
-
 }
 
 export default FetchPokemon;
